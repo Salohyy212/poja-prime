@@ -112,7 +112,7 @@ Resources:
       EventBusName: !GetAtt EventBridgeBus.Name
       EventPattern:
         source:
-          - school.hei.poja
+          - mg.hei.prime
       Targets:
         - Arn: !GetAtt MailboxQueue.Arn
           Id: !Join ['', [!Ref Env, -poja-prime, -api-mailbox]]
