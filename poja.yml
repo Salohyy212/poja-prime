@@ -5,7 +5,7 @@ custom_java_env_vars: poja-custom-java-env-vars.txt
 custom_java_repositories: poja-custom-java-repositories.txt
 frontal_memory: 512
 jacoco-min-coverage: '0.8'
-package_full_name: mg.hei.prime
+package_full_name: com.hei.school
 region: eu-west-3
 ssm_sg_id: C:/Program Files/Git/poja/sg/id
 ssm_subnet1_id: C:/Program Files/Git/poja/subnet/private1/id

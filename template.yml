@@ -38,7 +38,7 @@ Resources:
   FrontalFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: mg.hei.prime.ApiEventHandler::handleRequest
+      Handler: com.hei.school.ApiEventHandler::handleRequest
       MemorySize: 512
       Role: !Sub '{{resolve:ssm:/poja-prime/${Env}/execution/role-arn}}'
       Events:
@@ -51,7 +51,7 @@ Resources:
   WorkerFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: mg.hei.prime.MailboxEventHandler::handleRequest
+      Handler: com.hei.school.MailboxEventHandler::handleRequest
       MemorySize: 1024
       Role: !Sub '{{resolve:ssm:/poja-prime/${Env}/execution/role-arn}}'
       Events:
